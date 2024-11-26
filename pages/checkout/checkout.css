@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Se você tiver um menu ou links à esquerda */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    background-color: #000000;
+}
+
+header nav .logo {
+    width: 80px;
+    height: auto;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Adiciona preenchimento para clique mais confortável */
+    border-radius: 5px; /* Arredonda os links */
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #444444; /* Destaque ao passar o mouse */
+}
+
+h1 {
+    font-size: 50;
+    text-align: center;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+    cursor: not-allowed; /* Indica que o campo é somente leitura */
+}
+
+footer {
+    background-color: #ffec3e;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Card de checkout */
+.checkout-card {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-card h1 {
+    text-align: center;
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo do formulário de checkout */
+.checkout-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.checkout-card label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.checkout-card input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.checkout-card input:focus {
+    border-color: #ffec3e;
+    box-shadow: 0 0 5px rgba(255, 236, 62, 0.5);
+    outline: none;
+}
+
+/* Estilo para os novos campos */
+.checkout-card input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: #e6d437;
+}

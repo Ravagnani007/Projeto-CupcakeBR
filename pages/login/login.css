@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #000000;
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: space-between; /* Coloca os itens à esquerda e à direita */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.site-title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+
+    text-transform: uppercase; /* Texto em maiúsculas para destaque */
+}
+
+/* Se você tiver um menu ou links à esquerda */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    background-color: #000000;
+}
+
+header nav .logo {
+    width: 80px;
+    height: auto;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Adiciona preenchimento para clique mais confortável */
+    border-radius: 5px; /* Arredonda os links */
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #444444; /* Destaque ao passar o mouse */
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #ffec3e;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

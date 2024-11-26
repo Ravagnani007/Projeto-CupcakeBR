@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Cupcake Shop</title>
+    <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="../capcake_logo.png" alt="Logo Cupcake Shop" class="logo">
+            <a href="../produtos/produtos.html" class="site-title">Cupcake BR</a> <!-- Título com link -->
+            <a href="../carrinho/carrinho.html">Carrinho</a>
+            <a href="../login/login.html">Login</a>
+            <!-- Adicionando o botão de logout aqui -->
+            <button id="logoutBtn" class="nav-link" style="display: none;">Logout</button>
+             <!-- Ícone de carrinho -->
+            <div id="carrinhoContainer" style="display: flex; align-items: center; gap: 5px;">
+                <img id="iconeCarrinho" src="../cart_branco.png" alt="Carrinho" style="width: 30px; height: auto;">
+                <span id="numeroCarrinho" style="color: white; background-color: red; padding: 2px 5px; border-radius: 50%; font-size: 14px; display: none;">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <h1>Produtos</h1>
+    <!-- Alerta de Login -->
+<div id="alertaLogin" style="display: none; background-color: #f44336; color: white; padding: 15px; text-align: center; border-radius: 5px; margin: 20px;">
+    <strong>Você precisa estar logado para adicionar produtos ao carrinho.</strong>
+</div>
+
+    <div class="produtos">
+        <div class="produto">
+            <img src="../chocolate.jpg" alt="Cupcake de Chocolate">
+            <h2>Cupcake de Chocolate</h2>
+            <p>R$ 10,00</p>
+            <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="../morango.jpg" alt="Cupcake de Morango">
+            <h2>Cupcake de Morango</h2>
+            <p>R$ 12,00</p>
+            <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+        <div class="produto">
+            <img src="../baunilha.jpg" alt="Cupcake de Baunilha">
+            <h2>Cupcake de Baunilha</h2>
+            <p>R$ 11,00</p>
+            <button class="adicionar">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Cupcake BR</p>
+    </footer>
+
+    <script src="produtos.js"></script>
+
+</body>
+</html>

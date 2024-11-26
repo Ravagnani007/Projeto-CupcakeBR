@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex; /* Centraliza o conteúdo principal */
+    flex-direction: column; /* Alinha o header e os produtos verticalmente */
+    min-height: 100vh; /* Garante altura mínima para preencher a tela */
+}
+
+header {
+    background-color: #000000;
+    padding: 10px;
+    margin: 0;
+    height: auto;
+    display: flex; /* Usa flexbox para o layout */
+    justify-content: space-between; /* Coloca os itens à esquerda e à direita */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.site-title {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+
+    text-transform: uppercase; /* Texto em maiúsculas para destaque */
+}
+
+#carrinhoContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative; /* Permite o posicionamento absoluto do número dentro do contêiner */
+}
+
+#iconeCarrinho {
+    width: 30px;
+    height: auto;
+}
+
+#numeroCarrinho {
+    color: white;
+    background-color: red;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 14px;
+    display: none; /* Inicialmente invisível */
+    position: absolute; /* Coloca o número sobre o ícone */
+    top: -5px;
+    right: -5px;
+    z-index: 10; /* Garante que o número fique sobre o ícone */
+}
+
+/* Se você tiver um menu ou links à esquerda */
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    background-color: #000000;
+}
+
+header nav .logo {
+    width: 80px;
+    height: auto;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Adiciona preenchimento para clique mais confortável */
+    border-radius: 5px; /* Arredonda os links */
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #444444; /* Destaque ao passar o mouse */
+}
+
+header nav .nav-link {
+    color: white;
+    text-decoration: none; /* Sem sublinhado */
+    padding: 5px 10px; /* Adiciona preenchimento para clique confortável */
+    border-radius: 5px; /* Arredondamento nas bordas */
+    transition: background-color 0.3s ease; /* Transição suave */
+    background-color: transparent; /* Fundo transparente por padrão */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Cursor de clique */
+}
+
+header nav .nav-link:hover {
+    background-color: #444444; /* Cor de fundo ao passar o mouse */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas */
+    gap: 20px; /* Espaço entre os itens */
+    justify-content: center; /* Centraliza os itens na tela */
+    align-items: center; /* Alinha verticalmente os itens */
+    margin: 20px auto; /* Margem automática para centralizar horizontalmente */
+    max-width: 1200px; /* Define uma largura máxima */
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Mantém 3 colunas */
+    gap: 30px; /* Aumenta o espaço entre os cards */
+    justify-content: center; /* Centraliza os cards */
+    align-items: center;
+    margin: 20px auto;
+    max-width: 1400px; /* Aumenta a largura máxima */
+}
+
+.produto {
+    text-align: center;
+    width: 300px; /* Aumenta a largura dos cards */
+    padding: 20px; /* Aumenta o espaçamento interno */
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px; /* Bordas mais arredondadas para um visual moderno */
+    transition: transform 0.3s ease;
+}
+
+.produto img {
+    width: 100%;
+    height: 200px; /* Define uma altura fixa para imagens mais consistentes */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.produto:hover {
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #ffec3e;
+    text-align: center;
+    padding: 1rem;
+    margin-top: auto; /* Mantém o rodapé fixo ao final */
+    width: 100%;
+}
+
+.adicionar {
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.adicionar:hover {
+    background-color: #444444; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Efeito de leve aumento */
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Dados Bancários</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <img src="../capcake_logo.png" alt="Logo Cupcake Shop" class="logo">
+            <a href="../produtos/produtos.html" class="site-title">Cupcake BR</a>
+            <a href="../produtos/produtos.html">Produtos</a>
+            <a href="../carrinho/carrinho.html">Carrinho</a>
+        </nav>
+    </header>
+
+    <h1>Dados de Recebimento</h1>
+    <h1>E Pagamento</h1>
+    <main>
+        <div class="checkout-card">
+            <form id="checkoutForm">
+                <label for="banco">Banco</label>
+                <input type="text" id="banco" placeholder="Digite o nome do banco" required>
+    
+                <label for="agencia">Agência</label>
+                <input type="text" id="agencia" placeholder="Digite a agência" required>
+    
+                <label for="conta">Conta</label>
+                <input type="text" id="conta" placeholder="Digite a conta" required>
+    
+                <label for="titular">Titular</label>
+                <input type="text" id="titular" placeholder="Digite o nome do titular" required>
+    
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" placeholder="Digite o CPF do titular" required>
+    
+                <!-- Novos campos para dados de recebimento -->
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" placeholder="Digite o endereço" required>
+
+                <label for="numeroCasa">Número</label>
+                <input type="text" id="numeroCasa" placeholder="Digite o número da casa" required>
+
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" placeholder="Digite a cidade" required>
+    
+                <button type="submit" class="submit-button">Comprar</button>
+            </form>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Cupcake Shop</p>
+    </footer>
+
+    <script src="checkout.js"></script>
+
+</body>
+</html>
